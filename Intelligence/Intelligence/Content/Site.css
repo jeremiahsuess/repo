@@ -22,3 +22,23 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/*floats the object right using a class name*/
+.float-right {
+    float: right;
+}
+
+.marg-bottom10 {
+    margin-bottom: 10px;
+}
+
+.marg-top10 {
+    margin-top: 10px;
+}
+
+.marg-left10 {
+    margin-left: 10px;
+}
+.marg-right10 {
+    margin-top: 10px;
+}

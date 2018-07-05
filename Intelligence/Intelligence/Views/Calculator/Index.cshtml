@@ -8,53 +8,71 @@
 <h2>Compound Interest Calculator</h2>
 
 <div class="row">
-    <div class="col-md-6 col-sm-12 col-xs-12">
-        <div class="row">
+    <div class="col-md-9 col-sm-12 col-xs-12">
+
+        <div class="row marg-bottom10">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                @Html.LabelFor(x=>x.CurrentPrincipal, "Current Principal")
-                @Html.TextBoxFor(x=>x.CurrentPrincipal)
+                @Html.LabelFor(x => x.CurrentPrincipal, "Current Principal")
+                @Html.TextBoxFor(x => x.CurrentPrincipal, new { @class = "float-right" })
             </div>
+        </div>
+
+        <div class="row marg-bottom10">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                @Html.LabelFor(x=>x.AnnualAddition, "Annual Addition")
-                @Html.TextBoxFor(x=>x.AnnualAddition)
+                @Html.LabelFor(x => x.AnnualAddition, "Annual Addition")
+                @Html.TextBoxFor(x => x.AnnualAddition, new { @class = "float-right" })
             </div>
+        </div>
+
+        <div class="row marg-bottom10">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                @Html.LabelFor(x=>x.YearsToGrow, "Years to Grow")
-                @Html.TextBoxFor(x=>x.YearsToGrow)
+                @Html.LabelFor(x => x.YearsToGrow, "Years to Grow")
+                @Html.TextBoxFor(x => x.YearsToGrow, new { @class = "float-right" })
             </div>
+        </div>
+
+        <div class="row marg-bottom10">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                @Html.LabelFor(x=>x.InterestRate, "Interest Rate")
-                @Html.TextBoxFor(x=>x.InterestRate)
+                @Html.LabelFor(x => x.InterestRate, "Interest Rate")
+                @Html.TextBoxFor(x => x.InterestRate, new { @class = "float-right" })
             </div>
+        </div>
+
+        <div class="row marg-bottom10">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                @Html.LabelFor(x=>x.AnnualCompoundingsAmount, "How many times would you like this to compound annually?")
-                @Html.TextBoxFor(x=>x.AnnualCompoundingsAmount)
+                @Html.LabelFor(x => x.AnnualCompoundingsAmount, "How many times would you like this to compound annually?")
+                @Html.TextBoxFor(x => x.AnnualCompoundingsAmount, new { @class = "float-right" })
             </div>
+        </div>
+
+        <div class="row marg-bottom10">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                @Html.LabelFor(x=>x.HasAdditionsAtStart, "Would you like to make additions at the start or end of each compounding period?")
-                @Html.TextBoxFor(x=>x.HasAdditionsAtStart)
-                @Html.RadioButtonFor(x=>x.HasAdditionsAtStart, new { id="HasAdditionsAtStart", Value = true})
-                @Html.RadioButtonFor(x=>x.HasAdditionsAtStart, new { id = "HasAdditionsAtEnd", Value = false })       
+                @Html.LabelFor(x => x.HasAdditionsAtStart, "Would you like to make additions at the start or end of each compounding period?")<br />
+                @Html.RadioButtonFor(x => x.HasAdditionsAtStart, new {  Value = true })
+                @Html.LabelFor(x=>x.HasAdditionsAtStart,"Start", new { id = "HasAdditionsAtStartLabel" })<br />
+                @Html.RadioButtonFor(x => x.HasAdditionsAtStart, new {  Value = false })
+                @Html.LabelFor(x => x.HasAdditionsAtStart, "End", new { id = "HasAdditionsAtEndLabel" })<br />
             </div>
+        </div>
+
+        <div class="row marg-bottom10">
             <div class="col-md-12 col-sm-12 col-xs-12">
-                @Html.LabelFor(x=>x.AnnualAddition, "Future Value")
-                @Html.TextBoxFor(x=>x.FutureValue)
+                @Html.LabelFor(x => x.AnnualAddition, "Future Value")
+                @Html.TextBoxFor(x => x.FutureValue, new { @disabled = "disabled", @class = "float-right" })
             </div>
         </div>
     </div>
-    <div class="col-md-6 col-sm-12 col-xs-12">
+
+    <div class="col-md-3 col-sm-12 col-xs-12">
         <div class="row">
-
-
-
-
-
-
-
-
-
-
-
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function() {
+        Calculator.bindEvents();
+
+
+    });
+</script>

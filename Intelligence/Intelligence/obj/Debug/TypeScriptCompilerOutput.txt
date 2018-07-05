@@ -2,3 +2,5 @@ c:\git\repo\Intelligence\Intelligence\Scripts\Calculator.js
 c:\git\repo\Intelligence\Intelligence\Scripts\Calculator.js.map
 c:\git\repo\Intelligence\Intelligence\Scripts\Calculator.js
 c:\git\repo\Intelligence\Intelligence\Scripts\Calculator.js.map
+c:\git\repo\Intelligence\Intelligence\Scripts\Calculator.js
+c:\git\repo\Intelligence\Intelligence\Scripts\Calculator.js.map
