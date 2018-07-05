@@ -1,7 +1,60 @@
-﻿
+﻿@using System.Security.Policy
+@model Intelligence.Models.CompoundInterestCalculator
+
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Compound Interest Calculator</h2>
 
+<div class="row">
+    <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                @Html.LabelFor(x=>x.CurrentPrincipal, "Current Principal")
+                @Html.TextBoxFor(x=>x.CurrentPrincipal)
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                @Html.LabelFor(x=>x.AnnualAddition, "Annual Addition")
+                @Html.TextBoxFor(x=>x.AnnualAddition)
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                @Html.LabelFor(x=>x.YearsToGrow, "Years to Grow")
+                @Html.TextBoxFor(x=>x.YearsToGrow)
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                @Html.LabelFor(x=>x.InterestRate, "Interest Rate")
+                @Html.TextBoxFor(x=>x.InterestRate)
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                @Html.LabelFor(x=>x.AnnualCompoundingsAmount, "How many times would you like this to compound annually?")
+                @Html.TextBoxFor(x=>x.AnnualCompoundingsAmount)
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                @Html.LabelFor(x=>x.HasAdditionsAtStart, "Would you like to make additions at the start or end of each compounding period?")
+                @Html.TextBoxFor(x=>x.HasAdditionsAtStart)
+                @Html.RadioButtonFor(x=>x.HasAdditionsAtStart, new { id="HasAdditionsAtStart", Value = true})
+                @Html.RadioButtonFor(x=>x.HasAdditionsAtStart, new { id = "HasAdditionsAtEnd", Value = false })       
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                @Html.LabelFor(x=>x.AnnualAddition, "Future Value")
+                @Html.TextBoxFor(x=>x.FutureValue)
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12">
+        <div class="row">
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+</div>

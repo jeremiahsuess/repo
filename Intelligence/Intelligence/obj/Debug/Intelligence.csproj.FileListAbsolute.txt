@@ -62,6 +62,6 @@ c:\git\repo\Intelligence\Intelligence\bin\Microsoft.AI.DependencyCollector.xml
 c:\git\repo\Intelligence\Intelligence\bin\Microsoft.AI.ServerTelemetryChannel.xml
 c:\git\repo\Intelligence\Intelligence\bin\Microsoft.AI.WindowsServer.xml
 c:\git\repo\Intelligence\Intelligence\bin\Microsoft.AI.Web.xml
-c:\git\repo\Intelligence\Intelligence\obj\Debug\Intelligence.csprojResolveAssemblyReference.cache
 c:\git\repo\Intelligence\Intelligence\obj\Debug\Intelligence.dll
 c:\git\repo\Intelligence\Intelligence\obj\Debug\Intelligence.pdb
+c:\git\repo\Intelligence\Intelligence\obj\Debug\Intelligence.csprojResolveAssemblyReference.cache
