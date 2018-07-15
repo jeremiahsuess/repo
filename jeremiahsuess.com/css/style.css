@@ -1,0 +1,139 @@
+body {
+    background-color: white;
+    /*background-image: url("cleveland-wallpaper-1.jpg");*/
+    background-color: #cccccc;
+    font-family: "Roboto",sans-serif;
+    transition: background-color .5s;
+    background-repeat: repeat-y;
+}
+
+.fill-screen {
+    background-size: cover;
+    background-position: center;
+    background-image: url(cleveland-wallpaper-1.jpg);
+}
+
+#banner {
+    -webkit-filter: drop-shadow(4px 4px 5px #00C12B);
+    filter: drop-shadow(4px 4px 5px #00C12B);
+}
+
+ul:visited {
+    border: none !important;
+}
+
+a {
+    text-decoration: none !important;
+    border: none !important;
+}
+
+    a:active {
+        text-decoration: none !important;
+        border: none !important;
+    }
+
+
+/*pop out side navbar*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-image: url("wood_texture_by_xsweetsmile-d47lgxn.png");
+    border-right: 1px solid white;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover, .offcanvas a:focus {
+            color: dodgerblue;
+            text-decoration: none;
+        }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    .sidenav li {
+        list-style: none;
+    }
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+#menu-button {
+    color: white;
+}
+
+h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+    h1 a:hover {
+        color: lawngreen;
+        text-decoration: none;
+    }
+
+#tabs-1 {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 24px;
+}
+
+#tabs-2 {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 24px;
+}
+
+#tabs-3 {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 24px;
+}
+
+#tabs-4 {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 24px;
+}
+
+#tabs-5 {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 24px;
+}
